@@ -12,7 +12,7 @@ const userSchema = new mongoose.Schema(
     password: { type: String, required: true, minLength: 8 },
     location: { type: String },
     profilePhotoUrl: { type: String },
-    availability: { enum: ["WEEKEND", "WEEKDAY", "FULLTIME"] },
+    availability: { type: String, enum: ["WEEKEND", "WEEKDAY", "FULLTIME"] },
     isPublic: { type: Boolean, default: true },
   },
   { timestamps: true },

@@ -16,12 +16,12 @@ const swapSchema = new mongoose.Schema(
     },
     responder_skill_id: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Skill",
+      ref: "UserSkill",
       required: true,
     },
     requester_skill_id: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Skill",
+      ref: "UserSkill",
       required: true,
     },
     message: { type: String, required: true },

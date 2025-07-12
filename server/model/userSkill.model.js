@@ -18,6 +18,6 @@ const userSkillSchema = new mongoose.Schema(
   { timestamps: true },
 );
 
-userSkillSchema.index({ userId: 1, skillId: 1 }, { unique: true });
+userSkillSchema.index({ userId: 1, skillId: 1, type: 1 }, { unique: true });
 const UserSkill = mongoose.model("UserSkill", userSkillSchema);
 module.exports = UserSkill;
